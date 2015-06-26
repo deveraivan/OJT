@@ -8,11 +8,11 @@
 		<fieldset>
 			<legend>Request Information</legend>
 			<fieldset>
-				<?php echo form::label('date_requested','Date Requested: '); ?>		     		
+				<?php echo form::label('label1','Date Requested: '); ?>		     		
 				<input type="date" id="date_requested" name="date_requested"><br/>
-	            <?php echo form::label('date_needed','Date Needed: '); ?>
+	            <?php echo form::label('label2','Date Needed: '); ?>
 	            <input type="date" id="date_needed" name="date_needed"><br/>
-	     		<?php echo form::label('delivery_address','Delivery Address: '); ?>	     		
+	     		<?php echo form::label('label3','Delivery Address: '); ?>	     		
 	     		<?php echo form::input('delivery_address'); ?><br/>
 	     		<?php echo form::submit('submit','submit'); ?>
 			</fieldset>
