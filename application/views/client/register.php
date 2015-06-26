@@ -3,7 +3,7 @@
 		<title></title>
 	</head>
 	<body>
-		<?php echo form::open('user/create_user'); ?> 
+		<?php echo form::open('admin/user/create_user'); ?> 
 		<?php echo form::open_fieldset(array('id' => 'form_field'));?><br/>
 			<?php echo form::open_fieldset(array('id' => 'acct_field'));?><br/>
 			<?php echo form::legend('Account Information',array('id' => 'acct_legend'));?>

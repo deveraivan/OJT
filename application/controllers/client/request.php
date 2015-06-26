@@ -7,7 +7,7 @@ class Request_Controller extends Private_Template_Controller {
 	{
 		$this->template->title   = 'Request';
 		//$this->template->scripts .= html::script("media/js/create_request.js");
-		$this->template->content = View::factory('create_request')->render(TRUE);
+		$this->template->content = View::factory('client/create_request')->render(TRUE);
 	}
 
 	public function request_supply()

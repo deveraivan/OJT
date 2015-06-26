@@ -16,16 +16,21 @@ class User_Controller extends Private_Template_Controller {
     { 
         $this->user_model = new User_Model();
         $users_list = $this->user_model->get_users();
-        $this->users_view = View::factory('user_list')
+        $this->users_view = View::factory('admin/user_list')
              ->set('users_list', $users_list)
              ->render(TRUE);
    }
+   
+	public function show_create()
+	{
+		$this->template->title = 'User Registration';
+		$this->template->content = View::factory('client/register')->render(TRUE);
 
+	}
+	
 	public function create_user()
 	{	
-		$this->template->title = 'User Registration';
 		$this->auto_render = FALSE;
-		$this->template->content = View::factory('register')->render(TRUE);
 		$this->user_model  = new User_Model();
 		$data_user = array(
 			'firstname' =>  $this->input->post('firstname'),
@@ -50,6 +55,6 @@ class User_Controller extends Private_Template_Controller {
 		$this->user_model->create_info($data_info);
 		$this->user_model->create_comp($data_comp);
 		
-		url::redirect('user');
+		url::redirect('client/user');
 	}
 }

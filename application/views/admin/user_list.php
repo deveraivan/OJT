@@ -1,6 +1,7 @@
 <div>
 	<div id = "add_facility">
 		<!--<a href=""><img src="media/images/add.png"></a> href is for the controller location-->
+		<?php echo html::anchor('admin/user/show_create','Add New User'); ?>
 	</div>
 	<div id = "table">
 		<table class = "table_hovered">
@@ -11,7 +12,7 @@
 				<th>User Type</th>
 			</tr>
 		<?php
-			foreach($users_list as %user)
+			foreach($users_list as $user)
 			{
 				echo "<tr>";
 				echo "<td>" . $user->firstname . "</td>";

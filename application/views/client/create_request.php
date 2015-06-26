@@ -4,7 +4,7 @@
 		<title></title>
 	</head>
 	<body>
-		<?php echo form::open('request/request_supply') ?>
+		<?php echo form::open('client/request/request_supply') ?>
 		<fieldset>
 			<legend>Request Information</legend>
 			<fieldset>
