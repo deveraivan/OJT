@@ -3,10 +3,10 @@ class Tbl_User_Model extends ORM {
 	
     public function get_user($username)
     {
-      $user = ORM::factory('tbl_user')
+      $get_user = ORM::factory('tbl_user')
       			->SELECT('*')
       			->WHERE('username',$username)
       			->find();
-      return $user;
+      return $get_user;
     }
 }

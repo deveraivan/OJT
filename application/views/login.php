@@ -14,7 +14,7 @@
                         <?php echo form::password('password'); ?>
                         <br/>
                         <p><input type="submit" id="submit" value="Login"></p>
-                        
+                        <?php echo $error ?>
                 <?php echo form::close_fieldset();
                       echo form::close(); 
                       echo html::anchor('admin/user/show_create', 'sign up')?>
