@@ -29,7 +29,7 @@ class Login_Controller extends Private_Template_Controller {
                 $_SESSION['firstname']  = $get_user->firstname;
                 $_SESSION['lastname']   = $get_user->lastname;
 
-                url::redirect('dashboard');
+                url::redirect('admin/dashboard');
                 } 
                 else
                 {
