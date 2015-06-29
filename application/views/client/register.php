@@ -3,30 +3,30 @@
 		<title></title>
 	</head>
 	<body>
-		<?php echo form::open('admin/user/create_user'); ?> 
+		<?php echo form::open('admin/user/create_user', array('class' => '')); ?> 
 		<?php echo form::open_fieldset(array('id' => 'form_field'));?><br/>
-			<?php echo form::open_fieldset(array('id' => 'acct_field'));?><br/>
-			<?php echo form::legend('Account Information',array('id' => 'acct_legend'));?>
-				<?php echo form::label('label1','Username: ');?>
-				<?php echo form::input('username');?><br/>
+			<?php echo form::open_fieldset(array('class' => ''));?><br/>
+			<?php echo form::legend('Account Information',array('id' => 'acct_legend', 'class' => '')); ?>
+				<?php echo form::label(array('for' => 'label1', 'class' => ''),'Username: ');?>
+				<?php echo form::input('username','username','class=""');?><br/>
 				<br/>
-				<?php echo form::label('label2', 'Password: ');?>
-				<?php echo form::password('password','00000');?><br/>
+				<?php echo form::label(array('for' => 'label2', 'class' => ''), 'Password: ');?>
+				<?php echo form::password('password','','class =""');?><br/>
 				<br/>
 			<?php echo form::close_fieldset();?><br/>		
 	
-			<?php echo form::open_fieldset(array('id' => 'user_field'));?><br/>
-			<?php echo form::legend('User Information',array('id' => 'user_legend'));?>
-				<?php echo form::label('label3','First Name: ');?>
-				<?php echo form::input('firstname');?><br/>
+			<?php echo form::open_fieldset(array('class' => ''));?><br/>
+			<?php echo form::legend('User Information',array('id' => 'user_legend','class' => ''));?>
+				<?php echo form::label(array('for'=>'label3', 'class' => ''),'First Name: ');?>
+				<?php echo form::input('firstname', 'firstname', 'class = ""');?><br/>
 				<br/>
-				<?php echo form::label('label4','Last Name: ');?>
-				<?php echo form::input('lastname');?><br/>
+				<?php echo form::label(array('for'=>'label4', 'class' => ''),'Last Name: ');?>
+				<?php echo form::input('lastname', 'lastname', 'class = ""');?><br/>
 				<br/>
-				<?php echo form::label('label5','Address: ');?>
-				<?php echo form::input('address');?><br/>
+				<?php echo form::label(array('for'=>'label5', 'class' => ''),'Address: ');?>
+				<?php echo form::input('address', 'address', 'class =""');?><br/>
 				<br/>
-				<?php echo form::label('label6','Country: ');?>
+				<?php echo form::label(array('for'=>'label6', 'class' => ''),'Country: ');?>
 				<?php 
 					  $sample = array('philippines' => 'Philippines', 'japan' => 'Japan');
 					  echo form::dropdown('country',$sample,'philippines'); 

@@ -27,9 +27,10 @@ class User_Model extends Model {
 		{
 			$this->db->insert($this->info_table, $data_info);
 		}
-		 public function read($id) 
+		public function read($username) 
     	{
-        $this->db->where('id', $id);
+        //$this-
+        $this->db->where('username',$username);
         $query = $this->db->get($this->user_table);
         return $query->result_array();
     	}

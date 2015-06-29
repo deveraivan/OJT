@@ -14,7 +14,7 @@ class Supply_Controller extends Private_Template_Controller
     { 
         $this->supply_model = new Supply_Model();
         $supplies_list = $this->supply_model->get_supplies();
-        $this->supplies_view = View::factory('supply_view')
+        $this->supplies_view = View::factory('/admin/supply')
                 ->set('supplies_list', $supplies_list)
                 ->render(TRUE);
     }

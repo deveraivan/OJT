@@ -39,22 +39,25 @@ class User_Controller extends Private_Template_Controller {
 			'password'  =>  $this->input->post('password'),
 			'username'  =>  $this->input->post('username'), 
 		);
+		var_dump($data_user);
 		$data_info = array(
 			'country'    => $this->input->post('country'),
 			'postalcode' => $this->input->post('postalcode'),
 			'town_city'  => $this->input->post('town_city'), 
 			);
+		var_dump($data_info);
 		$data_comp = array(
 			'address'    => $this->input->post('comp_address'),
 			'contact_no' => $this->input->post('contact_no'),
 			'email'      => $this->input->post('email'),
 			'name'       => $this->input->post('comp_name')
 			);
-
+		var_dump($data_comp);	
 		$this->user_model->create_user($data_user);
 		$this->user_model->create_info($data_info);
 		$this->user_model->create_comp($data_comp);
 		
+
 		url::redirect('client/user');
 	}
 }
