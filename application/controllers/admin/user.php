@@ -3,7 +3,16 @@ class User_Controller extends Private_Template_Controller {
 
 	private $user_model;
 
-	public function index()
+	
+function __construct(){
+	parent::__construct();
+	
+	//$this->template->scripts = script();
+    $this->template->body->content = view::factory('admin/user_list');
+	
+}
+    
+    public function index()
 	{
 		 $this->template->title = 'User List';
 		//$this->template->scripts .= html::script("media/js/create_request.js");
