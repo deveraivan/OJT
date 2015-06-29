@@ -11,7 +11,7 @@
                       echo "<br>";
                       echo html::anchor('/admin/user', 'view Users Here');
                       echo "<br>";
-                      echo html::anchor('/admin/supply', 'view Requests Here');  
+                      echo html::anchor('/admin/request', 'view Requests Here');  
                       echo form::close_fieldset();?>
             </div>
         </div>
