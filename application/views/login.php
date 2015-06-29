@@ -9,7 +9,7 @@
       
                         <h1>Please Sign In </h1>
                         <label>Username:</label>
-                        <?php echo form::input('username','username'); ?>
+                        <?php echo form::input('username'); ?>
                         <label>Password:</label>
                         <?php echo form::password('password'); ?>
                         <br/>

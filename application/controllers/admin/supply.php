@@ -36,7 +36,7 @@ class Supply_Controller extends Private_Template_Controller
             'manufacturer'  =>  $this->input->post('manufacturer'),
             'number_of_supply'  =>  $this->input->post('number_of_supply'), 
             'description'  =>  $this->input->post('description'),
-            'status'  =>  $this->input->post('username'),            
+            'status'  =>  $this->input->post('status'),            
         );       
         $this->supply_model->create($data_supply);
         url::redirect('/admin/supply');
