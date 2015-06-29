@@ -5,8 +5,10 @@ class Login_Controller extends Private_Template_Controller {
 
 	public function index()
 	{
+
         $this->template->title = 'Login::Merchant';
-        $this->template->content = View::factory('login',array('error' => '' ))->render(TRUE);   
+        $this->template->content = View::factory('login',array('error' => '' ))->render(TRUE);
+	    
     }
     
     public function process_login()
@@ -37,7 +39,10 @@ class Login_Controller extends Private_Template_Controller {
         } 
         else 
         {
-          $error = "no user found";
+          $error = "Incorrect Username/Password";
         }
+        View::factory('login',array('error' => $error ))->render(TRUE);
+
     }
+
 }

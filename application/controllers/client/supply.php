@@ -10,6 +10,7 @@ class Supply_Controller extends Private_Template_Controller
         $this->show_supplies_list();
     }
     
+   
     private function show_supplies_list()
     { 
         $this->supply_model = new Supply_Model();

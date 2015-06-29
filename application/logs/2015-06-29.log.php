@@ -31,3 +31,6 @@
 2015-06-29 03:26:10 +02:00 --- error: Uncaught Kohana_404_Exception: The page you requested, dashboard.html, could not be found. in file C:/wamp/www/OJT/system/core/Kohana.php on line 841
 2015-06-29 03:26:32 +02:00 --- error: Uncaught Kohana_404_Exception: The page you requested, supply, could not be found. in file C:/wamp/www/OJT/system/core/Kohana.php on line 841
 2015-06-29 03:33:14 +02:00 --- error: Uncaught Kohana_404_Exception: The page you requested, dashboard.html, could not be found. in file C:/wamp/www/OJT/system/core/Kohana.php on line 841
+2015-06-29 03:41:54 +02:00 --- error: Uncaught Kohana_404_Exception: The page you requested, dashboard.html, could not be found. in file C:/wamp/www/OJT/system/core/Kohana.php on line 841
+2015-06-29 03:47:54 +02:00 --- error: Uncaught Kohana_Exception: The requested view, admin/create_supply, could not be found in file C:/wamp/www/OJT/system/core/Kohana.php on line 1162
+2015-06-29 03:48:21 +02:00 --- error: Uncaught Kohana_404_Exception: The page you requested, admin/supply/add_supply, could not be found. in file C:/wamp/www/OJT/system/core/Kohana.php on line 841
